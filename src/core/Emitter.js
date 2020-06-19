@@ -1,4 +1,4 @@
-export class Emmiter {
+export class Emitter {
     constructor() {
         this.listeners = {}
     }
@@ -15,7 +15,7 @@ export class Emmiter {
     }
 
     // Added new listener
-    subcscribe(event, fn) {
+    subscribe(event, fn) {
         this.listeners[event] = this.listeners[event] || [];
         this.listeners[event].push(fn);
         return () => {
