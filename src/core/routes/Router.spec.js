@@ -1,5 +1,5 @@
 import {Router} from './Router';
-import {Page} from '../Page';
+import {Page} from '../page/Page';
 
 class DashboardPage extends Page {
     getRoot() {
@@ -28,6 +28,6 @@ describe('Router:', () => {
 
     test('should render Dashboard page', () => {
         router.changePageHandler();
-        expect($root.innerHTML).toBe('<div>dashboard</div>')
+        expect($root.innerHTML).toBe('<div>dashboard</div>');
     })
 })
